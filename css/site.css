@@ -1,28 +1,152 @@
 :root {
-    --cf-dark: #212121;
-    --cf-light: #ebebeb;
-    --cf-darkblue: #00223d;
-    --cf-highlight: #fae100;
+  --cf-dark: #212121;
+  --cf-light: #ebebeb;
+  --cf-darkblue: #00223d;
+  --cf-highlight: #fae100;
+
+  --cf-title-font: "Racing Sans One", cursive;
+  --cf-subtitle-font: 'Fira Sans', sans-serif;
+  --cf-body-font: "Roboto", sans-serif;
 }
 
+#mainNav {
+  background: transparent;
+  color: var(--cf-light);
+}
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    background-image: url("/img/LandingPage_1920.png");
-    background-position: top right;
-    background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 .content {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .footer {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
+
+
+
+
+
+.mainTitle {
+  font-family: var(--cf-title-font);
+  font-size: 3.2rem;
+  line-height: 3rem;
+  color: var(--cf-light);
+}
+
+.subTitle {
+  font-family: var(--cf-subtitle-font);
+  font-weight: 300;
+  font-size: 1.30rem;
+  line-height: 1.2rem;
+  color: var(--cf-light);
+}
+
+.btn-primary {
+  color: var(--cf-dark);
+  background-color: var(--cf-highlight);
+  border-color: #212121;
+}
+
+.btn-primary:hover {
+    filter: brightness(1.1) !important;
+    background-color: var(--cf-dark);
+    color: var(--cf-highlight);
+    border: #212121;
+  }
+
+.mainHeader-wrapper {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+
+.bgImage {
+    background: url("/img/LandingPage_1920.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center center;
+    background-size:cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .bgImage {
+        background-image: url(/img/LandingPage_Mobile.jpg);
+      }
+      .mainTitle {
+        font-family: var(--cf-title-font);
+        font-size: 2.3rem;
+        line-height: 2rem;
+      }
+    
+      .subTitle {
+        font-family: var(--cf-subtitle-font);
+        font-weight: 300;
+        font-size: .98rem;
+        line-height: 1.5rem;
+      }
+}
+
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .bgImage {
+        background-image: url(/img/LandingPage_Mobile.jpg);
+      }
+    
+      .mainTitle {
+        font-family: var(--cf-title-font);
+        font-size: 5rem;
+        line-height: 4rem;
+      }
+    
+      .subTitle {
+        font-family: var(--cf-subtitle-font);
+        font-weight: 300;
+        font-size: 2.13rem;
+        line-height: 1.5rem;
+      }
+     
+
+}
+
+
+
+  /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .bgImage {
+        background-image: url(/img/LandingPage_1920.png);
+      }
+}
+    
+    
+
+/* X-Large devices (large desktops, 1200px and up) */
+ @media (min-width: 1200px) {
+
+        .mainTitle {
+            font-family: var(--cf-title-font);
+            font-size: 5rem;
+            line-height: 4rem;
+          }
+        
+          .subTitle {
+            font-family: var(--cf-subtitle-font);
+            font-weight: 300;
+            font-size: 2.12rem;
+            line-height: 1.5rem;
+          }
