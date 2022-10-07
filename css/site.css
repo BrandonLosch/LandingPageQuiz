@@ -105,7 +105,7 @@ body {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .bgImage {
-        background-image: url(/img/LandingPage_Mobile.jpg);
+        background-image: url(/img/LandingPage_Tablet.png);
       }
     
       .mainTitle {
