@@ -5,7 +5,7 @@
   --cf-highlight: #fae100;
 
   --cf-title-font: "Racing Sans One", cursive;
-  --cf-subtitle-font: 'Fira Sans', sans-serif;
+  --cf-subtitle-font: "Fira Sans", sans-serif;
   --cf-body-font: "Roboto", sans-serif;
 }
 
@@ -32,21 +32,17 @@ body {
   flex-shrink: 0;
 }
 
-
-
-
-
 .mainTitle {
   font-family: var(--cf-title-font);
-  font-size: 3.2rem;
-  line-height: 3rem;
+  font-size: 2.3rem;
+  line-height: 2rem;
   color: var(--cf-light);
 }
 
 .subTitle {
   font-family: var(--cf-subtitle-font);
   font-weight: 300;
-  font-size: 1.30rem;
+  font-size: 1rem;
   line-height: 1.2rem;
   color: var(--cf-light);
 }
@@ -58,96 +54,79 @@ body {
 }
 
 .btn-primary:hover {
-    filter: brightness(1.1) !important;
-    background-color: var(--cf-dark);
-    color: var(--cf-highlight);
-    border: #212121;
-  }
+  filter: brightness(1.1) !important;
+  background-color: var(--cf-dark);
+  color: var(--cf-highlight);
+  border: #212121;
+}
 
 .mainHeader-wrapper {
   padding-right: 1rem;
   padding-left: 1rem;
 }
 
-
 .bgImage {
-    background: url("/img/LandingPage_1920.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: center center;
-    background-size:cover;
-    max-width: 100%;
-    max-height: 100%;
+  background: url("/img/LandingPage_Mobile.jpg"), var(--cf-darkblue);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
-    .bgImage {
-        background-image: url(/img/LandingPage_Mobile.jpg);
-      }
-      .mainTitle {
-        font-family: var(--cf-title-font);
-        font-size: 2.3rem;
-        line-height: 2rem;
-      }
-    
-      .subTitle {
-        font-family: var(--cf-subtitle-font);
-        font-weight: 300;
-        font-size: .98rem;
-        line-height: 1.5rem;
-      }
 }
-
-
-
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .bgImage {
-        background-image: url(/img/LandingPage_Tablet.png);
-      }
-    
-      .mainTitle {
-        font-family: var(--cf-title-font);
-        font-size: 5rem;
-        line-height: 4rem;
-      }
-    
-      .subTitle {
-        font-family: var(--cf-subtitle-font);
-        font-weight: 300;
-        font-size: 2.13rem;
-        line-height: 1.5rem;
-      }
-     
+  .bgImage {
+    background-image: url(/img/LandingPage_992.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
 
+  .mainTitle {
+    font-family: var(--cf-title-font);
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+
+  .subTitle {
+    font-family: var(--cf-subtitle-font);
+    font-weight: 300;
+    font-size: 2.13rem;
+    line-height: 1.5rem;
+  }
 }
 
+@media (min-width: 768px) and (orientation : portrait) {
+  .bgImage {
+    background-image: url(/img/LandingPage_992.png), var(--cf-darkblue);
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
 
-
-  /* Large devices (desktops, 992px and up) */
+/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .bgImage {
-        background-image: url(/img/LandingPage_1920.png);
-      }
+  .bgImage {
+    background-image: url(/img/LandingPage_1200.png), var(--cf-darkblue);
+  }
 }
-    
-    
 
 /* X-Large devices (large desktops, 1200px and up) */
- @media (min-width: 1200px) {
+@media (min-width: 1200px) {
+  .bgImage {
+    background-image: url(/img/LandingPage_1400.png), var(--cf-darkblue);
+  }
+  .mainTitle {
+    font-family: var(--cf-title-font);
+    font-size: 5rem;
+    line-height: 4rem;
+  }
 
-        .mainTitle {
-            font-family: var(--cf-title-font);
-            font-size: 5rem;
-            line-height: 4rem;
-          }
-        
-          .subTitle {
-            font-family: var(--cf-subtitle-font);
-            font-weight: 300;
-            font-size: 2.12rem;
-            line-height: 1.5rem;
-          }
-        }          
+  .subTitle {
+    font-family: var(--cf-subtitle-font);
+    font-weight: 300;
+    font-size: 2.12rem;
+    line-height: 1.5rem;
+  }
+}
